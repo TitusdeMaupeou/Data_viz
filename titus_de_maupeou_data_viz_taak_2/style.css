@@ -1,0 +1,36 @@
+body {
+    font-family: Futura, sans-serif;
+    background-color: #ffffff;
+}
+
+#tooltip {
+    margin:0;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.6;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 4px 10px rgba(59, 59, 59, 0.116);
+    -moz-box-shadow: 4px 4px 10px rgba(59, 59, 59, 0.116);
+    box-shadow: 4px 4px 10px rgba(59, 59, 59, 0.116);
+    pointer-events: none;
+}
+
+#tooltip.hidden {
+    display: none;
+}
+
+#tooltip {
+    margin: 0;
+    font-family: Futura, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#tooltip p {
+    opacity: 1;
+}
