@@ -1,0 +1,33 @@
+body {
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+canvas {
+    margin: 0 auto;
+    display: block;
+}
+
+#dribbble {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.projectcontainer {
+    background-color: white;
+    margin: 0px 20px 20px 20px;
+    width: 200px;
+    -webkit-box-shadow: 3px 3px 5px 4px rgb(233, 233, 233);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 4px rgb(233, 233, 233);   /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 4px rgb(233, 233, 233); 
+}
+ 
+.dribbbleproject {
+    width: 80%;
+    margin: 10px 0px 10px 10%;
+    height: 110px;
+}
