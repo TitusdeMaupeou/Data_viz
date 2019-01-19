@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="fd134e3e-db76-436c-8868-601753820da6">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="combine3">
+        <node name="align2" position="0.00,19.00" prototype="corevector.align">
+            <port name="halign" type="string" value="none"/>
+            <port name="valign" type="string" value="top"/>
+        </node>
+        <node name="align3" position="30.00,19.00" prototype="corevector.align">
+            <port name="halign" type="string" value="none"/>
+            <port name="valign" type="string" value="top"/>
+        </node>
+        <node name="color1" position="22.00,18.00" prototype="color.color"/>
+        <node name="color2" position="52.00,18.00" prototype="color.color"/>
+        <node name="colorize1" position="7.00,21.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#4fde00ff"/>
+            <port name="stroke" type="color" value="#5a000000"/>
+            <port name="strokeWidth" type="float" value="2.0"/>
+        </node>
+        <node name="colorize2" position="14.00,21.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#de2f69ae"/>
+            <port name="stroke" type="color" value="#5a000000"/>
+            <port name="strokeWidth" type="float" value="2.0"/>
+        </node>
+        <node name="colorize3" position="37.00,21.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#4fde00ff"/>
+            <port name="stroke" type="color" value="#5a000000"/>
+            <port name="strokeWidth" type="float" value="2.0"/>
+        </node>
+        <node name="colorize4" position="44.00,21.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#de2f69ae"/>
+            <port name="stroke" type="color" value="#5a000000"/>
+            <port name="strokeWidth" type="float" value="2.0"/>
+        </node>
+        <node name="combine1" position="9.00,30.00" prototype="list.combine"/>
+        <node name="combine2" position="39.00,30.00" prototype="list.combine"/>
+        <node name="combine3" position="21.00,34.00" prototype="list.combine"/>
+        <node name="connect2" position="7.00,20.00" prototype="corevector.connect"/>
+        <node name="connect3" position="14.00,20.00" prototype="corevector.connect"/>
+        <node name="connect4" position="37.00,20.00" prototype="corevector.connect"/>
+        <node name="connect5" position="44.00,20.00" prototype="corevector.connect"/>
+        <node name="count1" position="1.00,5.00" prototype="list.count"/>
+        <node name="count2" position="31.00,5.00" prototype="list.count"/>
+        <node name="import_csv1" position="1.00,-1.00" prototype="data.import_csv">
+            <port name="file" type="string" value="a.facebook.csv"/>
+        </node>
+        <node name="import_csv2" position="31.00,-1.00" prototype="data.import_csv">
+            <port name="file" type="string" value="b.facebook.csv"/>
+        </node>
+        <node name="line1" position="10.00,5.00" prototype="corevector.line"/>
+        <node name="line2" position="10.00,7.00" prototype="corevector.line">
+            <port name="point1" type="point" value="-235.00,-5.00"/>
+            <port name="point2" type="point" value="1416.24,-14.19"/>
+        </node>
+        <node name="line3" position="22.00,13.00" prototype="corevector.line">
+            <port name="point1" type="point" value="-220.00,-50.00"/>
+            <port name="point2" type="point" value="300.00,-50.00"/>
+        </node>
+        <node name="line4" position="52.00,13.00" prototype="corevector.line">
+            <port name="point1" type="point" value="-220.00,-50.00"/>
+            <port name="point2" type="point" value="300.00,-50.00"/>
+        </node>
+        <node name="line5" position="40.00,7.00" prototype="corevector.line">
+            <port name="point1" type="point" value="-235.00,-5.00"/>
+            <port name="point2" type="point" value="1416.24,-14.19"/>
+        </node>
+        <node name="line6" position="40.00,5.00" prototype="corevector.line"/>
+        <node name="lookup1" prototype="data.lookup">
+            <port name="key" type="string" value="date"/>
+        </node>
+        <node name="lookup2" position="5.00,3.00" prototype="data.lookup">
+            <port name="key" type="string" value="sentiment-positive-count"/>
+        </node>
+        <node name="lookup3" position="14.00,3.00" prototype="data.lookup">
+            <port name="key" type="string" value="sentiment-negative-count"/>
+        </node>
+        <node name="lookup4" position="44.00,3.00" prototype="data.lookup">
+            <port name="key" type="string" value="sentiment-negative-count"/>
+        </node>
+        <node name="lookup5" position="35.00,3.00" prototype="data.lookup">
+            <port name="key" type="string" value="sentiment-positive-count"/>
+        </node>
+        <node name="lookup6" position="31.00,3.00" prototype="data.lookup">
+            <port name="key" type="string" value="date"/>
+        </node>
+        <node name="multiply1" position="5.00,4.00" prototype="math.multiply">
+            <port name="value1" type="float" value="50.0"/>
+            <port name="value2" type="float" value="50.0"/>
+        </node>
+        <node name="multiply2" position="14.00,4.00" prototype="math.multiply">
+            <port name="value2" type="float" value="50.0"/>
+        </node>
+        <node name="multiply3" position="35.00,4.00" prototype="math.multiply">
+            <port name="value1" type="float" value="50.0"/>
+            <port name="value2" type="float" value="50.0"/>
+        </node>
+        <node name="multiply4" position="44.00,4.00" prototype="math.multiply">
+            <port name="value2" type="float" value="50.0"/>
+        </node>
+        <node name="number1" position="10.00,2.00" prototype="math.number"/>
+        <node name="number2" position="40.00,2.00" prototype="math.number"/>
+        <node name="point1" position="7.00,17.00" prototype="corevector.point"/>
+        <node name="point2" position="14.00,17.00" prototype="corevector.point"/>
+        <node name="point3" position="37.00,17.00" prototype="corevector.point"/>
+        <node name="point4" position="44.00,17.00" prototype="corevector.point"/>
+        <node name="rect1" position="5.00,6.00" prototype="corevector.rect">
+            <port name="width" type="float" value="20.0"/>
+        </node>
+        <node name="rect2" position="14.00,6.00" prototype="corevector.rect"/>
+        <node name="rect3" position="35.00,6.00" prototype="corevector.rect">
+            <port name="width" type="float" value="20.0"/>
+        </node>
+        <node name="rect4" position="44.00,6.00" prototype="corevector.rect"/>
+        <node name="resample1" position="1.00,10.00" prototype="corevector.resample">
+            <port name="method" type="string" value="amount"/>
+            <port name="length" type="float" value="100.0"/>
+            <port name="points" type="int" value="1000"/>
+        </node>
+        <node name="resample2" position="12.00,10.00" prototype="corevector.resample">
+            <port name="method" type="string" value="amount"/>
+        </node>
+        <node name="resample3" position="18.00,10.00" prototype="corevector.resample"/>
+        <node name="resample4" position="48.00,10.00" prototype="corevector.resample"/>
+        <node name="resample5" position="42.00,10.00" prototype="corevector.resample">
+            <port name="method" type="string" value="amount"/>
+        </node>
+        <node name="resample6" position="31.00,10.00" prototype="corevector.resample">
+            <port name="method" type="string" value="amount"/>
+            <port name="length" type="float" value="100.0"/>
+            <port name="points" type="int" value="1000"/>
+        </node>
+        <node name="round_segments1" position="7.00,22.00" prototype="corevector.round_segments">
+            <port name="d" type="float" value="5.0"/>
+        </node>
+        <node name="round_segments2" position="14.00,22.00" prototype="corevector.round_segments">
+            <port name="d" type="float" value="5.0"/>
+        </node>
+        <node name="round_segments3" position="44.00,22.00" prototype="corevector.round_segments">
+            <port name="d" type="float" value="5.0"/>
+        </node>
+        <node name="round_segments4" position="37.00,22.00" prototype="corevector.round_segments">
+            <port name="d" type="float" value="5.0"/>
+        </node>
+        <node name="slice1" position="1.00,1.00" prototype="list.slice">
+            <port name="size" type="int" value="100"/>
+        </node>
+        <node name="slice2" position="31.00,1.00" prototype="list.slice">
+            <port name="size" type="int" value="100"/>
+        </node>
+        <node name="take_every2" position="7.00,19.00" prototype="list.take_every">
+            <port name="n" type="int" value="4"/>
+        </node>
+        <node name="take_every3" position="14.00,19.00" prototype="list.take_every">
+            <port name="n" type="int" value="4"/>
+        </node>
+        <node name="take_every4" position="44.00,19.00" prototype="list.take_every">
+            <port name="n" type="int" value="4"/>
+        </node>
+        <node name="take_every5" position="37.00,19.00" prototype="list.take_every">
+            <port name="n" type="int" value="4"/>
+        </node>
+        <node name="text_on_path1" position="22.00,16.00" prototype="corevector.text_on_path">
+            <port name="text" type="string" value="Person A : Facebook"/>
+            <port name="font_name" type="string" value="Verdana Bold"/>
+            <port name="font_size" type="float" value="30.0"/>
+        </node>
+        <node name="text_on_path2" position="52.00,16.00" prototype="corevector.text_on_path">
+            <port name="text" type="string" value="Person B : Facebook"/>
+            <port name="font_name" type="string" value="Verdana Bold"/>
+            <port name="font_size" type="float" value="30.0"/>
+        </node>
+        <node name="textpath1" position="-3.00,7.00" prototype="corevector.textpath">
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="2.0"/>
+        </node>
+        <node name="textpath2" position="27.00,7.00" prototype="corevector.textpath">
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="2.0"/>
+        </node>
+        <node name="translate1" position="0.00,15.00" prototype="corevector.translate"/>
+        <node name="translate2" position="14.00,15.00" prototype="corevector.translate"/>
+        <node name="translate3" position="7.00,15.00" prototype="corevector.translate"/>
+        <node name="translate4" position="37.00,15.00" prototype="corevector.translate"/>
+        <node name="translate5" position="44.00,15.00" prototype="corevector.translate"/>
+        <node name="translate6" position="30.00,15.00" prototype="corevector.translate"/>
+        <node name="translate7" position="30.00,32.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,235.00"/>
+        </node>
+        <conn input="slice1.list" output="import_csv1"/>
+        <conn input="lookup1.list" output="slice1"/>
+        <conn input="count1.list" output="lookup1"/>
+        <conn input="resample1.shape" output="line2"/>
+        <conn input="textpath1.text" output="lookup1"/>
+        <conn input="lookup2.list" output="slice1"/>
+        <conn input="translate1.translate" output="resample1"/>
+        <conn input="resample1.points" output="count1"/>
+        <conn input="line1.point2" output="multiply1"/>
+        <conn input="rect1.height" output="multiply1"/>
+        <conn input="take_every2.list" output="point1"/>
+        <conn input="connect2.points" output="take_every2"/>
+        <conn input="colorize1.shape" output="connect2"/>
+        <conn input="resample2.shape" output="line2"/>
+        <conn input="translate3.translate" output="resample2"/>
+        <conn input="translate3.shape" output="rect1"/>
+        <conn input="point1.value" output="translate3"/>
+        <conn input="translate1.shape" output="textpath1"/>
+        <conn input="resample2.points" output="count1"/>
+        <conn input="align2.shape" output="translate1"/>
+        <conn input="combine1.list1" output="align2"/>
+        <conn input="lookup3.list" output="slice1"/>
+        <conn input="multiply1.value1" output="lookup2"/>
+        <conn input="multiply2.value1" output="lookup3"/>
+        <conn input="rect2.height" output="multiply2"/>
+        <conn input="translate2.shape" output="rect2"/>
+        <conn input="resample3.shape" output="line2"/>
+        <conn input="resample3.points" output="count1"/>
+        <conn input="translate2.translate" output="resample3"/>
+        <conn input="take_every3.list" output="point2"/>
+        <conn input="connect3.points" output="take_every3"/>
+        <conn input="colorize2.shape" output="connect3"/>
+        <conn input="point2.value" output="translate2"/>
+        <conn input="round_segments1.shape" output="colorize1"/>
+        <conn input="combine1.list2" output="round_segments1"/>
+        <conn input="round_segments2.shape" output="colorize2"/>
+        <conn input="combine1.list3" output="round_segments2"/>
+        <conn input="text_on_path1.path" output="line3"/>
+        <conn input="slice2.list" output="import_csv2"/>
+        <conn input="lookup6.list" output="slice2"/>
+        <conn input="count2.list" output="lookup6"/>
+        <conn input="resample6.shape" output="line5"/>
+        <conn input="textpath2.text" output="lookup6"/>
+        <conn input="lookup5.list" output="slice2"/>
+        <conn input="translate6.translate" output="resample6"/>
+        <conn input="resample6.points" output="count2"/>
+        <conn input="line6.point2" output="multiply3"/>
+        <conn input="rect3.height" output="multiply3"/>
+        <conn input="take_every5.list" output="point3"/>
+        <conn input="connect4.points" output="take_every5"/>
+        <conn input="colorize3.shape" output="connect4"/>
+        <conn input="resample5.shape" output="line5"/>
+        <conn input="translate4.translate" output="resample5"/>
+        <conn input="translate4.shape" output="rect3"/>
+        <conn input="point3.value" output="translate4"/>
+        <conn input="translate6.shape" output="textpath2"/>
+        <conn input="resample5.points" output="count2"/>
+        <conn input="align3.shape" output="translate6"/>
+        <conn input="combine2.list1" output="align3"/>
+        <conn input="lookup4.list" output="slice2"/>
+        <conn input="multiply3.value1" output="lookup5"/>
+        <conn input="multiply4.value1" output="lookup4"/>
+        <conn input="rect4.height" output="multiply4"/>
+        <conn input="translate5.shape" output="rect4"/>
+        <conn input="resample4.shape" output="line5"/>
+        <conn input="resample4.points" output="count2"/>
+        <conn input="translate5.translate" output="resample4"/>
+        <conn input="take_every4.list" output="point4"/>
+        <conn input="connect5.points" output="take_every4"/>
+        <conn input="colorize4.shape" output="connect5"/>
+        <conn input="point4.value" output="translate5"/>
+        <conn input="round_segments4.shape" output="colorize3"/>
+        <conn input="combine2.list2" output="round_segments4"/>
+        <conn input="round_segments3.shape" output="colorize4"/>
+        <conn input="combine2.list3" output="round_segments3"/>
+        <conn input="text_on_path2.path" output="line4"/>
+        <conn input="combine2.list4" output="text_on_path2"/>
+        <conn input="combine3.list1" output="combine1"/>
+        <conn input="translate7.shape" output="combine2"/>
+        <conn input="combine3.list2" output="translate7"/>
+        <conn input="combine3.list3" output="round_segments3"/>
+        <conn input="combine1.list4" output="text_on_path1"/>
+    </node>
+</ndbx>
